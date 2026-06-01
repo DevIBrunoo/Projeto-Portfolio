@@ -1,39 +1,60 @@
-# Portfólio - Bruno Henrique
+# 🎮 Portfólio IBrunooDev
 
-Portfólio profissional de desenvolvimento front-end.
+O meu portfólio profissional, com design moderno e um terminal de navegação **MUITO TOP**! 🖥️
 ---
-<img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/0a11f1bf-8d32-4f93-8938-85b00ea6f5d8" />
+<img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/b4964586-e0ac-4862-9242-95b203b380e5" />
 
 
-## 🔗 Links Úteis
+## 🔗 Acesse Agora
 
-- **Site**: https://ibruninhoodev.netlify.app/
-- **LinkedIn**: https://linkedin.com/in/brunocarus
-- **GitHub**: https://github.com/DevIBrunoo
-- **E-mail**: bruninhoodev@gmail.com
+| Onde? | Link |
+| :--- | :--- |
+| 🌐 Site | [ibrunodev.netlify.app](https://ibruninhoodev.netlify.app/) |
+| 💼 LinkedIn | [linkedin.com/in/brunocarus](https://linkedin.com/in/brunocarus) |
+| 🧑‍💻 GitHub | [github.com/DevIBrunoo](https://github.com/DevIBrunoo) |
 
-## � O que tem no projeto?
+---
 
-- **Página Inicial**: Hero, Skills e Terminal de Navegação
-- **Sobre Mim**: Informações pessoais e profissional
-- **Carreira**: Timeline com minha trajetória
-- **Projetos**: Galeria com os meus trabalhos
-- **Contato**: Formulário e redes sociais
-- **Player de Música**: Toca música de fundo enquanto navega
-- **Terminal Interativo**: Navegue usando comandos ou botões!
+## ✨ O que tem de especial?
 
-## 🚀 Como usar
+1. **🎨 Design Moderno**: Tema escuro com detalhes em ciano
+2. **🎵 Player de Música**: Toca uma música enquanto você navega (persiste!)
+3. **💻 Terminal de Navegação**: Use comandos ou clique nos botões!
+4. **📱 100% Responsivo**: Funciona em celulares, tablets e PCs
+5. **🐱 Página Secreta**: Digite `teste` no terminal e veja o que acontece!
 
-1. Abra o arquivo `index.html` no navegador
-2. Ou use o Live Server no VS Code para melhor experiência
+---
+
+## ⌨️ Comandos do Terminal
+
+| Comando | Ação |
+| :--- | :--- |
+| `inicio` | Volta para o começo |
+| `sobre` | Sobre mim |
+| `carreira` | Minha trajetória |
+| `projetos` | Meus trabalhos |
+| `contato` | Fale comigo |
+| `teste` | Segredo |
+| `help` | Lista de comandos |
+
+---
+
+## 🚀 Como rodar
+
+1. Baixe o projeto
+2. Abra o arquivo `index.html`
+3. Ou use o **Live Server** no VS Code para melhor experiência!
+
+---
 
 ## 🛠️ Tecnologias
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
-- DevIcon (ícones)
+- DevIcon
 - Google Fonts (Inter)
 
 ---
-Feito com ❤️ por Bruno Henrique © 2026
+
+Feito com ❤️ e ☕ por Bruno Henrique © 2026
