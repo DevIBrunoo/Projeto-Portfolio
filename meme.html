@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBrunooDev | Gatinho Dançante!</title>
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="src/img/Icon-BrunoH.png">
+    
+    <link rel="stylesheet" href="src/css/root.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .meme-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px 40px;
+            text-align: center;
+        }
+
+        .meme-title {
+            font-size: clamp(2rem, 6vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary-color), #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            animation: titlePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes titlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .cat-dancing {
+            width: min(400px, 90vw);
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 0 60px rgba(0, 212, 255, 0.4);
+            animation: dance 0.5s ease-in-out infinite alternate;
+            margin-bottom: 40px;
+        }
+
+        @keyframes dance {
+            0% { transform: rotate(-5deg) scale(1); }
+            100% { transform: rotate(5deg) scale(1.05); }
+        }
+
+        .meme-caption {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .meme-emoji {
+            font-size: 4rem;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">Bruno Henrique<span>.dev</span></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <!-- <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="carreira.html">Carreira</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="meme.html" class="active">🐱 Meme</a></li> -->
+            </ul>
+
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="meme-container">
+        <div class="meme-emoji"></div>
+        <h1 class="meme-title">GATINHO DANÇANTE!</h1>
+        <img 
+            src="/src/img/Gato.gif" 
+            alt="Gato dançando muito feliz" 
+            class="cat-dancing"
+        >
+        <p class="meme-caption">Quando o código compila na primeira tentativa! 🚀</p>
+        
+    </main>
+
+    <!-- Seção Terminal -->
+    <section class="terminal-section container">
+        <div class="section-header reveal">
+            <h2 class="section-title">Terminal de Navegação</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="terminal-container reveal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-btn close"></span>
+                    <span class="terminal-btn minimize"></span>
+                    <span class="terminal-btn maximize"></span>
+                </div>
+                <div class="terminal-title">visitor@ibrunodev:~$</div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="terminal-output">
+                    <span class="terminal-welcome">Bem-vindo ao terminal do portfólio!</span>
+                    <span class="terminal-info">Clique nos botões abaixo ou digite um comando:</span>
+                    
+                    <div class="terminal-quick-actions">
+                            <button class="terminal-quick-btn" data-cmd="inicio">▶ inicio</button>
+                            <button class="terminal-quick-btn" data-cmd="sobre">▶ sobre</button>
+                            <button class="terminal-quick-btn" data-cmd="carreira">▶ carreira</button>
+                            <button class="terminal-quick-btn" data-cmd="projetos">▶ projetos</button>
+                            <button class="terminal-quick-btn" data-cmd="contato">▶ contato</button>
+                            <button class="terminal-quick-btn" data-cmd="teste">▶ teste</button>
+                            <button class="terminal-quick-btn" data-cmd="help">▶ help</button>
+                        </div>
+                        
+                        <span class="terminal-cmd-example"><span class="cmd-text">inicio</span> - Página Inicial</span>
+                        <br>
+                        <span class="terminal-cmd-example"><span class="cmd-text">sobre</span> - Sobre Mim</span>
+                        <br>
+                        <span class="terminal-cmd-example"><span class="cmd-text">carreira</span> - Carreira</span>
+                        <br>
+                        <span class="terminal-cmd-example"><span class="cmd-text">projetos</span> - Projetos</span>
+                        <br>
+                        <span class="terminal-cmd-example"><span class="cmd-text">contato</span> - Contato</span>
+                        <br>
+                        <span class="terminal-cmd-example"><span class="cmd-text">teste</span> - Comando Teste</span>
+                        <br>
+                        <span class="terminal-cmd-example"><span class="cmd-text">help</span> - Lista de comandos</span>
+                    <br><br>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="terminal-prompt">visitor@ibrunodev:~$</span>
+                    <input type="text" id="terminal-input" class="terminal-input" autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Bruno Henrique. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/brunocarus/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/IBruninhooDev" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/devibrunoo/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
